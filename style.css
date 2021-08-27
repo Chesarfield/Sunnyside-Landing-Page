@@ -1,0 +1,909 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+*{
+       margin: 0;
+       padding: 0;
+}
+
+html, body{
+       box-sizing: border-box;
+       width: auto;
+       min-height: 100%;
+       font-size: 18px;
+}
+
+@media screen and (min-width: 1366px){
+       
+       /* ? Header*/ 
+
+       .header{
+              background-image: url(./images/desktop/image-header.jpg);
+              background-position: bottom;
+              background-size: cover;
+              background-repeat: no-repeat;
+       }
+
+       .menu{
+              display: flex;
+       }
+
+       .menu h2{
+              font-family:  Verdana, Geneva, Tahoma, sans-serif;
+              margin: 2.5% 0 3% 5%;
+              color:hsl(0, 0%, 100%);
+       }
+
+       .menu ul{
+              width: 45%;
+              list-style-type: none;
+              margin: 1% 0 1% 39%;
+              text-align: center;
+       }
+
+       .menu ul li{
+              display: inline-block;
+              padding: 5% 0 5% 0;
+              width: 8em;
+              text-align: center;
+       }
+
+       .menu ul li a{
+              color: hsl(0, 0%, 100%);
+              text-decoration: none;
+              font-family: 'Barlow', sans-serif;
+              padding: 15%;
+              text-align: center;
+       }
+
+       .menu ul li a.active{
+              background-color: hsl(0, 0%, 100%);
+              text-transform: uppercase;
+              font-family: 'Fraunces', sans-serif;
+              color: #000;
+              border-radius: 40px;
+              font-size: 14px;
+       }
+
+       .menu ul li a:hover,
+       .menu ul li a.active:hover{
+              color:hsl(0, 0%, 100%);
+              text-transform: uppercase;
+              font-family: 'Fraunces', sans-serif;
+              background-color:hsla(0, 0%, 100%, 0.432);
+              border-radius: 40px;
+              font-size: 14px;
+       }
+
+       .img-header h2{
+              text-align: center;
+              padding: 0.5em 0 8.2em 0;
+              font-family: 'Fraunces', sans-serif;
+              text-transform: uppercase;
+              color:hsl(0, 0%, 100%);
+              letter-spacing: 8px;
+              font-size: 2.5em;
+       }
+
+       .img-header img{
+              position: relative;
+              left: 49%;
+              bottom: 16.5em;
+       }
+
+       /* ? Transform*/
+
+       .transform{
+              width: 100%;
+              height: 32em;
+              display: inline-flex;
+              flex-direction: row-reverse;       /* ? sorted in reverse*/
+       }
+
+       .transform-text{
+              width: 50%;
+              padding: 8em 0;
+       }
+
+       .transform-text h2{
+              color: #333;
+              text-align: left;
+              font-family: 'Fraunces', sans-serif;
+              font-size: 2.5em;
+              padding: 0 0 1em 2.5em;
+       }
+
+       .transform-text p{
+              font-family: 'Barlow', sans-serif;
+              opacity: 0.6;
+              text-align: left;
+              padding: 0 6.5em 2em 6.5em;
+              line-height: 1.4em;
+       }
+
+       .transform-text a{
+              font-family: 'Fraunces', sans-serif;
+              text-transform: uppercase;
+              color: #333;
+              text-decoration-color: hsla(51, 100%, 49%, 0.288);
+              text-decoration-thickness: 0.3em;
+              margin: 0 0 0 6.5em;
+       }
+
+       .transform-text a:hover{
+              text-decoration-color: hsl(51, 100%, 49%);
+              font-size: 20px;
+              color: black;
+       }
+
+       .transform-img{
+              width: 50%;
+              background-image: url(./images/desktop/image-transform.jpg);
+              background-position: center;
+              background-size: cover;
+       }
+
+       /* ?  Stand Out*/
+
+       .stand-out{
+              width: 100%;
+              height: 32em;
+              display: inline-flex;
+              position: relative;
+              bottom: 5px;
+       }
+
+       .stand-out-img{
+              width: 50%;
+              background-image: url(./images/desktop/image-stand-out.jpg);
+              background-position: center;
+              background-size: cover;
+       }
+
+       .stand-out-text{
+              width: 50%;
+              padding: 8em 0;
+       }
+
+       .stand-out-text h2{
+              color: #333;
+              text-align: left;
+              font-family: 'Fraunces', sans-serif;
+              font-size: 2.5em;
+              padding: 0 0 1em 2.5em;
+       }
+
+       .stand-out-text p{
+              font-family: 'Barlow', sans-serif;
+              opacity: 0.6;
+              text-align: left;
+              padding: 0 6.5em 2em 6.5em;
+              line-height: 1.4em;
+       }
+
+       .stand-out-text a{
+              font-family: 'Fraunces', sans-serif;
+              text-transform: uppercase;
+              color: #333;
+              text-decoration-color: hsla(7, 99%, 70%, 0.288);
+              text-decoration-thickness: 0.3em;
+              margin: 0 0 0 6.5em;
+       }
+
+       .stand-out-text a:hover{
+              text-decoration-color: hsl(7, 99%, 70%);
+              font-size: 20px;
+              color: black;
+       }
+
+       /* ? Great Design*/
+
+       .great-design{
+              width: 100%;
+              height: 32em;
+              display: inline-flex;
+              position: relative;
+              bottom: 10px;
+       }
+
+       .graphic-design{
+              background-image: url(./images/desktop/image-graphic-design.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 50%;
+              color: hsl(167, 40%, 24%);
+              padding: 20em 0 0 0;
+       }
+
+       .graphic-design h2{
+              font-family: 'Fraunces', sans-serif;
+              text-align: center;
+              padding: 0 0 1em 0;
+       }
+
+       .graphic-design p{
+              text-align: center ;
+              padding: 0 9em;
+              line-height: 1.5em;
+       }
+
+       .photography{
+              background-image: url(./images/desktop/image-photography.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 50%;
+              color: hsl(198, 62%, 26%);
+              padding: 20em 0 0 0;
+       }
+
+       .photography h2{
+              font-family: 'Fraunces', sans-serif;
+              text-align: center;
+              padding: 0 0 1em 0;
+       }
+
+       .photography p{
+              text-align: center;
+              padding: 0 8em;
+              line-height: 1.5em;
+       }
+
+       /* ? Client Testimonials*/
+
+       .client-testimonials{
+              width: 100%;
+              height: 40em;
+       }
+
+       .client-testimonials span{
+              text-transform: uppercase;
+              font-family: 'Fraunces', sans-serif;
+              letter-spacing: 0.4em;
+              opacity: 0.5;
+              position: relative;
+              top: 8em;
+              left: 37.5%;
+       }
+
+       .client-testimonials2{
+              display: inline-flex;
+       }
+
+       .emily{
+              margin: 13em 0 0 0;
+              text-align: center;
+              position: relative;
+              left: 5em;
+       }
+
+       .emily img{
+              border-radius: 100%;
+              width: 5em;
+       }
+
+       .emily p{
+              padding: 3em 2em 3em 2em;
+              opacity: 0.6;
+              font-family: 'Barlow', sans-serif;
+              line-height: 1.6em;
+       }
+
+       .emily h2{
+              font-family: 'Fraunces', sans-serif;
+              font-size: 18px;
+              padding: 0 0 0.8em 0;
+       }
+
+       .emily h6{
+              font-family: 'Barlow', sans-serif;
+              font-size: 14px;
+              opacity: 0.6;
+       }
+
+       .thomas{
+              margin: 13em 0 0 0;
+              text-align: center;
+       }
+
+       .thomas img{
+              border-radius: 100%;
+              width: 5em;
+       }
+
+       .thomas p{
+              padding: 3em 4.5em 3em 4.5em;
+              opacity: 0.6;
+              font-family: 'Barlow', sans-serif;
+              line-height: 1.6em;
+       }
+
+       .thomas h2{
+              font-family: 'Fraunces', sans-serif;
+              font-size: 18px;
+              padding: 0 0 0.8em 0;
+       }
+
+       .thomas h6{
+              font-family: 'Barlow', sans-serif;
+              font-size: 14px;
+              opacity: 0.6;
+       }
+
+       .jennie{
+              margin: 13em 0 0 0;
+              text-align: center;
+              position: relative;
+              right: 5em;
+       }
+
+       .jennie img{
+              border-radius: 100%;
+              width: 5em;
+       }
+
+       .jennie p{
+              padding: 3em 1.5em 3em 1.5em;
+              opacity: 0.6;
+              font-family: 'Barlow', sans-serif;
+              line-height: 1.6em;
+       }
+
+       .jennie h2{
+              font-family: 'Fraunces', sans-serif;
+              font-size: 18px;
+              padding: 0 0 0.8em 0;
+       }
+
+       .jennie h6{
+              font-family: 'Barlow', sans-serif;
+              font-size: 14px;
+              opacity: 0.6;
+       }
+
+       /* ?  Photos */
+
+       .photo{
+              width: 100%;
+              height: 26em;
+              display: inline-flex;
+       }
+
+       .milkbottles{
+              background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 25%;
+       }
+
+       .orange{
+              background-image: url(./images/desktop/image-gallery-orange.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 25%;
+       }
+
+       .cone{
+              background-image: url(./images/desktop/image-gallery-cone.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 25%;
+       }
+
+       .sugarcubes{
+              background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 25%;
+       }
+
+       /* ? Footer */
+
+       footer{
+              width: 100%;
+              height: 18em;
+              background-color:  #90D4C5;
+              position: relative;
+              bottom: 5px;
+              text-align: center;
+       }
+
+       footer h2{
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: hsl(168, 34%, 41%);
+              padding: 2.5em 0 2em 0;
+       }
+
+       .normal-link{
+              display: inline-flex;
+       }
+
+       .normal-link li{
+              list-style-type: none;
+              padding: 0 1.8em;
+       }
+
+       .normal-link li a{
+              text-decoration: none;
+              color: hsl(168, 34%, 41%);
+              font-family: 'Barlow', sans-serif;
+       }
+
+       .normal-link li a:hover{
+              color: #fff;
+       }
+
+       .icons-link{
+              display: inline-flex;
+       }
+
+       .icons-link li{
+              list-style-type: none;
+              padding: 3.5em 0.8em 0 0.8em;
+       }
+
+       .attribution{
+              background-color: #fff;
+              position: relative;
+              height: 1.8em;
+              color: #555;
+              text-align: center;
+              font-family: 'Barlow', sans-serif;
+              font-size: 18px;
+       }
+
+       .attribution a{
+              text-decoration: none;
+              color: #000;
+       }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1365px) {
+       
+       /* ? Header*/ 
+
+       .header{
+              background-image: url(./images/mobile/image-header.jpg);
+              background-position: bottom;
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 100%;
+       }
+
+       .menu{
+              display: flex;
+       }
+
+       .menu h2{
+              font-family:  Verdana, Geneva, Tahoma, sans-serif;
+              margin: 2.5% 0 3% 5%;
+              color:hsl(0, 0%, 100%);
+       }
+
+       .menu ul{
+              width: 45%;
+              list-style-type: none;
+              margin: 1% 0 1% 39%;
+              text-align: center;
+       }
+
+       .menu ul li{
+              display: inline-block;
+              padding: 5% 0 5% 0;
+              width: 8em;
+              text-align: center;
+       }
+
+       .menu ul li a{
+              color: hsl(0, 0%, 100%);
+              text-decoration: none;
+              font-family: 'Barlow', sans-serif;
+              padding: 15%;
+              text-align: center;
+       }
+
+       .menu ul li a.active{
+              background-color: hsl(0, 0%, 100%);
+              text-transform: uppercase;
+              font-family: 'Fraunces', sans-serif;
+              color: #000;
+              border-radius: 40px;
+              font-size: 14px;
+       }
+
+       .menu ul li a:hover,
+       .menu ul li a.active:hover{
+              color:hsl(0, 0%, 100%);
+              text-transform: uppercase;
+              font-family: 'Fraunces', sans-serif;
+              background-color:hsla(0, 0%, 100%, 0.432);
+              border-radius: 40px;
+              font-size: 14px;
+       }
+
+       .img-header h2{
+              text-align: center;
+              padding: 0.5em 0 8.2em 0;
+              font-family: 'Fraunces', sans-serif;
+              text-transform: uppercase;
+              color:hsl(0, 0%, 100%);
+              letter-spacing: 8px;
+              font-size: 2.5em;
+       }
+
+       .img-header img{
+              position: relative;
+              left: 49%;
+              bottom: 16.5em;
+       }
+
+       /* ? Transform*/
+
+       .transform{
+              width: 100%;
+              height: 60em;
+       }
+
+       .transform-img{
+              width: 100%;
+              height: 30em;
+              background-image: url(./images/mobile/image-transform.jpg);
+              background-position: center;
+              background-size: cover;
+       }
+
+       .transform-text{
+              width: 100%;
+              height: 30em;
+              padding: 2.5em 0;
+       }
+
+       .transform-text h2{
+              color: #333;
+              text-align: center;
+              font-family: 'Fraunces', sans-serif;
+              font-size: 2.5em;
+              padding: 2em 0 0 0;
+       }
+
+       .transform-text p{
+              font-family: 'Barlow', sans-serif;
+              opacity: 0.6;
+              text-align: center;
+              padding: 1em 3em 2em 3em;
+              line-height: 1.4em;
+       }
+
+       .transform-text a{
+              font-family: 'Fraunces', sans-serif;
+              text-transform: uppercase;
+              color: #333;
+              text-decoration-color: hsla(51, 100%, 49%, 0.288);
+              text-decoration-thickness: 0.3em;
+              margin: 0 0 0 13em;
+       }
+
+       .transform-text a:hover{
+              text-decoration-color: hsl(51, 100%, 49%);
+              color: black;
+       }
+
+       /* ?  Stand Out*/
+
+       .stand-out{
+              width: 100%;
+              height: 60em;
+       }
+
+       .stand-out-img{
+              width: 100%;
+              height: 30em;
+              background-image: url(./images/desktop/image-stand-out.jpg);
+              background-position: center;
+              background-size: cover;
+       }
+
+       .stand-out-text{
+              width: 100%;
+              height: 30em;
+              padding: 6em 0 0 0;
+       }
+
+       .stand-out-text h2{
+              color: #333;
+              text-align: center;
+              font-family: 'Fraunces', sans-serif;
+              font-size: 2.5em;
+              padding: 0 2em 1em 2em;
+       }
+
+       .stand-out-text p{
+              font-family: 'Barlow', sans-serif;
+              opacity: 0.6;
+              text-align: center;
+              padding: 0 6.5em 2em 6.5em;
+              line-height: 1.4em;
+       }
+
+       .stand-out-text a{
+              font-family: 'Fraunces', sans-serif;
+              text-transform: uppercase;
+              color: #333;
+              text-decoration-color: hsla(7, 99%, 70%, 0.288);
+              text-decoration-thickness: 0.3em;
+              margin: 0 0 0 13em;
+       }
+
+       .stand-out-text a:hover{
+              text-decoration-color: hsl(7, 99%, 70%);
+              color: black;
+       }
+
+       /* ? Great Design*/
+
+       .great-design{
+              width: 100%;
+              height: 100em;
+              position: relative;
+              bottom: 5px;
+       }
+
+       .graphic-design{
+              background-image: url(./images/mobile/image-graphic-design.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: top;
+              width: 100%;
+              height: 50em;
+              color: hsl(167, 40%, 24%);
+              padding: 0 0 0 0;
+       }
+
+       .graphic-design h2{
+              font-family: 'Fraunces', sans-serif;
+              font-size: 40px;
+              text-align: center;
+              padding: 17em 0 1em 0;
+       }
+
+       .graphic-design p{
+              text-align: center ;
+              padding: 0 7em;
+              line-height: 1.5em;
+       }
+
+       .photography{
+              background-image: url(./images/mobile/image-photography.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 100%;
+              height: 50em;
+              color: hsl(198, 62%, 26%);
+              padding: 0 0 0 0;
+       }
+
+       .photography h2{
+              font-family: 'Fraunces', sans-serif;
+              font-size: 40px;
+              text-align: center;
+              padding: 17em 0 1em 0;
+       }
+
+       .photography p{
+              text-align: center;
+              padding: 0 6em;
+              line-height: 1.5em;
+       }
+
+       /* ? Client Testimonials*/
+
+       .client-testimonials{
+              width: 100%;
+              height: 50em;
+       }
+
+       .client-testimonials span{
+              text-transform: uppercase;
+              font-family: 'Fraunces', sans-serif;
+              letter-spacing: 0.4em;
+              opacity: 0.5;
+              position: relative;
+              top: 4em;
+              left: 7em;
+       }
+
+       .emily{
+              margin: 10em 0 5em 0;
+              text-align: center;
+              position: relative;
+              left: 0;
+       }
+
+       .emily img{
+              border-radius: 100%;
+              width: 5em;
+       }
+
+       .emily p{
+              padding: 2em 5em 2em 5em;
+              opacity: 0.6;
+              font-family: 'Barlow', sans-serif;
+              line-height: 1.6em;
+       }
+
+       .emily h2{
+              font-family: 'Fraunces', sans-serif;
+              font-size: 18px;
+              padding: 0 0 0 0;
+       }
+
+       .emily h6{
+              font-family: 'Barlow', sans-serif;
+              font-size: 14px;
+              opacity: 0.6;
+       }
+
+       .thomas{
+              margin: 0 0 7em 0;
+              text-align: center;
+       }
+
+       .thomas img{
+              border-radius: 100%;
+              width: 5em;
+       }
+
+       .thomas p{
+              padding: 2em 6em 2em 6em;
+              opacity: 0.6;
+              font-family: 'Barlow', sans-serif;
+              line-height: 1.6em;
+       }
+
+       .thomas h2{
+              font-family: 'Fraunces', sans-serif;
+              font-size: 18px;
+              padding: 0 0 0 0;
+       }
+
+       .thomas h6{
+              font-family: 'Barlow', sans-serif;
+              font-size: 14px;
+              opacity: 0.6;
+       }
+
+       .jennie{
+              margin: 0 0 0 0;
+              text-align: center;
+              position: relative;
+              right: 0;
+       }
+
+       .jennie img{
+              border-radius: 100%;
+              width: 5em;
+       }
+
+       .jennie p{
+              padding: 2em 5em 2em 5em;
+              opacity: 0.6;
+              font-family: 'Barlow', sans-serif;
+              line-height: 1.6em;
+       }
+
+       .jennie h2{
+              font-family: 'Fraunces', sans-serif;
+              font-size: 18px;
+              padding: 0 0 0 0;
+       }
+
+       .jennie h6{
+              font-family: 'Barlow', sans-serif;
+              font-size: 14px;
+              opacity: 0.6;
+       }
+
+       /* ?  Photos */
+
+       .photo{
+              width: 375px;
+              height: 26em;
+       }
+
+       .milkbottles{
+              background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 375px;
+       }
+
+       .orange{
+              background-image: url(./images//mobile/image-gallery-orange.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 375px;
+       }
+
+       .cone{
+              background-image: url(./images/mobile/image-gallery-cone.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 100%;
+       }
+
+       .sugarcubes{
+              background-image: url(./images//mobile/image-gallery-sugar-cubes.jpg);
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 100%;
+       }
+
+       /* ? Footer */
+
+       footer{
+              width: 100%;
+              height: 18em;
+              background-color:  #90D4C5;
+              position: relative;
+              bottom: 5px;
+              text-align: center;
+       }
+
+       footer h2{
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: hsl(168, 34%, 41%);
+              padding: 2.5em 0 2em 0;
+       }
+
+       .normal-link{
+              display: inline-flex;
+       }
+
+       .normal-link li{
+              list-style-type: none;
+              padding: 0 1.8em;
+       }
+
+       .normal-link li a{
+              text-decoration: none;
+              color: hsl(168, 34%, 41%);
+              font-family: 'Barlow', sans-serif;
+       }
+
+       .normal-link li a:hover{
+              color: #fff;
+       }
+
+       .icons-link{
+              display: inline-flex;
+       }
+
+       .icons-link li{
+              list-style-type: none;
+              padding: 3.5em 0.8em 0 0.8em;
+       }
+
+       .attribution{
+              width: 100%;
+              background-color: #fff;
+              position: relative;
+              height: 1.8em;
+              color: #555;
+              text-align: center;
+              font-family: 'Barlow', sans-serif;
+              font-size: 16px;
+       }
+
+       .attribution a{
+              text-decoration: none;
+              color: #000;
+       }
+}
